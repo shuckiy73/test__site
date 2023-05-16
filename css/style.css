@@ -438,7 +438,7 @@ body {
 /* .portfolio__grid-item {
 } */
 .portfolio__img {
-    width: 375px;
+    max-width: 375px;
     height: 271px;
 }
 
