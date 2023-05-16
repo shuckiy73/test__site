@@ -135,12 +135,6 @@ body {
     color: var(--white-color);
 }
 
-@media screen and (max-width: 380px) {
-    .h1 {
-        font-size: 46px;
-        line-height: 64px;
-    }
-}
 
 .h4 {
     margin: 10px auto;
@@ -206,28 +200,6 @@ body {
     font-size: 18px;
 }
 
-@media screen and (max-width:1280px) {
-    .about__grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-
-    }
-
-}
-
-@media screen and (max-width:768px) {
-    .info {
-        position: relative;
-        padding: 30px 0;
-    }
-
-    .about__grid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-
-    }
-
-}
 
 .project-h2 {
     text-align: center;
@@ -268,35 +240,6 @@ body {
     color: var(--gray-color);
 }
 
-
-@media screen and (max-width:1280px) {
-    .about {
-        padding: 450px 15px 110px 15px;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .about {
-        padding-top: 150px;
-        padding-bottom: 80px;
-    }
-
-    .about__flex {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about__flex-item {
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
-
-    .about__flex-item:last-child {
-        margin-bottom: 0;
-    }
-
-}
-
 .request {
     background-color: var(--accent-color);
     padding-top: 30px;
@@ -330,10 +273,6 @@ body {
     letter-spacing: 0.02em;
 }
 
-
-
-/* .request__flex-right {
-    } */
 .request__btn {
     margin-top: 20px;
     border: none;
@@ -352,18 +291,6 @@ body {
     margin-right: 15px;
 }
 
-@media screen and (max-width:1280px) {
-    .request {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .request__flex {
-        flex-wrap: wrap;
-    }
-}
 
 .services {
     padding: 150px 0;
@@ -404,30 +331,6 @@ body {
     margin: 0 auto 21px;
 }
 
-@media screen and (max-width:1280px) {
-    .services {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .services__grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .services__grid-item {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .services__grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-/* .portfolio {
-} */
 .portfolio__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -435,23 +338,9 @@ body {
     gap: 0;
 }
 
-/* .portfolio__grid-item {
-} */
 .portfolio__img {
     max-width: 375px;
     height: 271px;
-}
-
-@media screen and (max-width:1280px) {
-    .portfolio__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width:768px) {
-    .portfolio__grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
 }
 
 .question {
@@ -463,11 +352,6 @@ body {
 .question .section__h2 {
     margin-bottom: 50px;
 }
-
-/* .question__items {
-}
-.question__item {
-} */
 
 .question__h3 {
     text-transform: uppercase;
@@ -505,19 +389,11 @@ body {
     display: none;
 }
 
-@media screen and (max-width:1280px) {
-    .question {
-        padding: 150px 15px 110px;
-    }
-}
-
 .partners {
     padding-top: 100px;
     padding-bottom: 80px;
     background-color: var(--dark-color);
 }
-
-/* .h2 {} */
 
 .partners__h2 {
     color: var(--white-color);
@@ -539,22 +415,6 @@ body {
 
 .partners__item:nth-child(5n) {
     margin-right: 0;
-}
-
-@media screen and (max-width:1280px) {
-    .partners__flex {
-        justify-content: center;
-    }
-
-    .partners__item {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    .partners__item:nth-child(5n) {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
 }
 
 .reviews {
@@ -590,25 +450,6 @@ body {
 
 .reviews__author-accent {
     color: var(--accent-color);
-}
-
-@media screen and (max-width:1280px) {
-    .reviews {
-        padding: 100px 15px;
-    }
-
-    .reviews__grid {
-        display: grid;
-        gap: 30px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width:768px) {
-    .reviews__grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
 }
 
 .contacts {
@@ -650,26 +491,6 @@ body {
     color: var(--accent-color);
 }
 
-@media screen and (max-width:1280px) {
-    .contacts__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contacts__icon {
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .contacts__grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .contacts__icon {
-        max-width: 100%;
-    }
-}
-
 .footer {
     padding: 30px 0;
     background-color: var(--dark-color);
@@ -679,21 +500,4 @@ body {
 .footer__flex {
     display: flex;
     justify-content: space-between;
-}
-
-
-/* .footer__copyright {}
-
-.footer__brand {} */
-
-@media screen and (max-width:1280px) {
-    .footer {
-        padding: 30px 15px;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .footer__flex {
-        flex-direction: column;
-    }
 }
