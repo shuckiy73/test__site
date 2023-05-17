@@ -9,22 +9,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/media.css">
-    <!-- <link rel="stylesheet" href=""> -->
     <title>Test site</title>
 </head>
 
 <body>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/office.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
     <header class="header">
         <div class="container">
             <div class="header__title">
                 <img src="/img/logo.svg" alt="logo" class="logo">
-                <button class="burger">
+                <a data-target="slide-out" class="burger sidenav-trigger">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
-                </button>
+                </a>
             </div>
             <h1 class="h1">Реализуем крупнейшие проекты в России</h1>
             <h4 class="h4">Стадионы, газопроводы, мосты, дамбы</h4>
@@ -342,7 +363,8 @@
                 <div class="contacts__item">
                     <img class="contacts__icon" src="/img/email.svg" alt="email">
                     <h3 class="text-h3 contacts__h3 contacts-gray">E-MAIL:</h3>
-                    <h3 class="text-h3 contacts__h3 contacts__h3-accent"><a href="mailto:info@vip.ru">info@vip.ru</a></h3>
+                    <h3 class="text-h3 contacts__h3 contacts__h3-accent"><a href="mailto:info@vip.ru">info@vip.ru</a>
+                    </h3>
                 </div>
             </div>
         </div>
@@ -356,6 +378,10 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
 </body>
 
 </html>
