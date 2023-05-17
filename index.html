@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" /> -->
     <link rel="stylesheet" href="/css/style.css">
     <title>Test site</title>
 </head>
@@ -18,7 +18,7 @@
 <body>
 
     <ul id="slide-out" class="sidenav">
-        <li>
+        <!-- <li>
             <div class="user-view">
                 <div class="background">
                     <img src="images/office.jpg">
@@ -27,21 +27,25 @@
                 <a href="#name"><span class="white-text name">John Doe</span></a>
                 <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
             </div>
-        </li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
+        </li> -->
+        <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
+        <li><a href="#!"><i class="material-icons">work</i>Услуги</a></li>
+        <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+        
         <li>
             <div class="divider"></div>
         </li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        <!-- <a class="waves-effect waves-light btn-small">Закрыть</a> -->
+        <!-- <li><a class="subheader">Subheader</a></li> -->
+        <!-- <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
     </ul>
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <header class="header">
         <div class="container">
             <div class="header__title">
                 <img src="/img/logo.svg" alt="logo" class="logo">
-                <a data-target="slide-out" class="burger sidenav-trigger">
+                <a href="#!" data-target="slide-out" class="burger sidenav-trigger">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
@@ -378,10 +382,9 @@
             </div>
         </div>
     </footer>
-
-    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-</body>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
 </body>
 
 </html>
