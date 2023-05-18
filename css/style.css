@@ -272,6 +272,8 @@ body {
 }
 
 .request__btn {
+    text-decoration: none;
+    color: #000;
     margin-top: 20px;
     border: none;
     border-color: #FFFFFF;
@@ -705,6 +707,88 @@ body {
 
 /*  */
 
+ul#slide-out:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul#slide-out:not(.browser-default)>li {
+    list-style-type: none;
+}
+
+#slide-out a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* .breadcrumb i,
+.breadcrumb [class^="mdi-"], .breadcrumb [class*="mdi-"],
+.breadcrumb i.material-icons {
+  display: inline-block;
+  /* float: left; */
+/* font-size: 24px; */
+/* } */
+*/ .material-icons {
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: 'liga';
+    -moz-font-feature-settings: 'liga';
+    font-feature-settings: 'liga';
+}
+
+/* 
+  nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display: block;
+  font-size: 24px;
+  height: 56px;
+  line-height: 56px;
+}
+
+nav .brand-logo i,
+nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi-"],
+nav .brand-logo i.material-icons {
+  float: left;
+  margin-right: 15px;
+}
+
+nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-small > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-flat > .material-icons, nav ul a.btn-floating > .material-icons {
+    height: inherit;
+    line-height: inherit;
+  } */
+
+
+/* .input-field input[type=search]:focus:not(.browser-default) + label i,
+.input-field input[type=search]:focus:not(.browser-default) ~ .mdi-navigation-close,
+.input-field input[type=search]:focus:not(.browser-default) ~ .material-icons {
+  color: #444;
+} */
+
+/* .input-field input[type=search] ~ .mdi-navigation-close,
+.input-field input[type=search] ~ .material-icons {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  color: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+} */
+
+/* .sidenav li > a > i,
+.sidenav li > a > [class^="mdi-"], .sidenav li > a li > a > [class*="mdi-"],
+.sidenav li > a > i.material-icons {
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 32px 0 0;
+  width: 24px;
+  color: rgba(0, 0, 0, 0.54);
+} */
+
+
+
 .divider {
     height: 1px;
     overflow: hidden;
@@ -989,3 +1073,102 @@ nav,
     z-index: 997;
     display: none;
 }
+
+/* -- modal -- */
+.z-depth-5, .modal {
+    -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 70%;
+    width: 55%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 2px;
+    will-change: top, opacity;
+  }
+  
+  .modal:focus {
+    outline: none;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .modal {
+      width: 80%;
+    }
+  }
+  
+  .modal h1, .modal h2, .modal h3, .modal h4 {
+    margin-top: 0;
+  }
+  
+  .modal .modal-content {
+    padding: 24px;
+  }
+  
+  .modal .modal-close {
+    cursor: pointer;
+  }
+  
+  .modal .modal-footer {
+    border-radius: 0 0 2px 2px;
+    background-color: #fafafa;
+    padding: 4px 6px;
+    height: 56px;
+    width: 100%;
+    text-align: right;
+  }
+  
+  .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-small, .modal .modal-footer .btn-flat {
+    margin: 6px 0;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    z-index: 999;
+    top: -25%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 125%;
+    width: 100%;
+    background: #000;
+    display: none;
+    will-change: opacity;
+  }
+  
+  .modal.modal-fixed-footer {
+    padding: 0;
+    height: 70%;
+  }
+  
+  .modal.modal-fixed-footer .modal-content {
+    position: absolute;
+    height: calc(100% - 56px);
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+  }
+  
+  .modal.modal-fixed-footer .modal-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .modal.bottom-sheet {
+    top: auto;
+    bottom: -100%;
+    margin: 0;
+    width: 100%;
+    max-height: 45%;
+    border-radius: 0;
+    will-change: bottom, opacity;
+  }
