@@ -18,29 +18,15 @@
 <body>
 
     <ul id="slide-out" class="sidenav">
-        <!-- <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="images/office.jpg">
-                </div>
-                <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-            </div>
-        </li> -->
         <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
         <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
-        <li><a href="#!"><i class="material-icons">work</i>Услуги</a></li>
+        <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
         <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
-        
         <li>
             <div class="divider"></div>
         </li>
-        <!-- <a class="waves-effect waves-light btn-small">Закрыть</a> -->
-        <!-- <li><a class="subheader">Subheader</a></li> -->
-        <!-- <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
+        <li><a href="#!"><i class="sidenav-close"></i>Закрыть</a></li>
     </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <header class="header">
         <div class="container">
             <div class="header__title">
@@ -124,6 +110,21 @@
         </div>
     </section>
 
+    <!-- Modal Trigger -->
+    <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Заголовок окна</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic harum et nemo ut temporibus dolor cum fuga,
+                non voluptas cumque mollitia, totam delectus perferendis atque!</p>
+        </div>
+        <!-- <div class="modal-footer"> -->
+        <!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>  -->
+        <!-- </div> -->
+    </div>
+
     <section class="request">
         <div class="container">
             <div class="request__flex">
@@ -132,10 +133,10 @@
                     <h5 class="request__h5">РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ РЕШЕНИЯ В РОССИИ!</h5>
                 </div>
                 <div class="request__flex-right">
-                    <button class="request__btn">
+                    <a class="request__btn modal-trigger" href="#modal1">
                         <img src="/img/invelope.svg" alt="invelope" class="request__icon">
                         ВАШ ЗАПРОС
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -322,6 +323,13 @@
         </div>
     </section>
 
+    <!-- Modal Structure -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Заголовок окна</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
     <section class="request">
         <div class="container">
             <div class="request__flex">
@@ -330,10 +338,14 @@
                     <h5 class="request__h5">ОСТАВЬТЕ ЗАЯВКУ И МЫ СВЯЖЕМСЯ С ВАМИ!</h5>
                 </div>
                 <div class="request__flex-right">
-                    <button class="request__btn">
+                    <!-- <button class="request__btn"> -->
+                    <a class="request__btn modal-trigger" href="#modal2">
                         <img src="/img/invelope.svg" alt="invelope" class="request__icon">
                         ВАШ ЗАПРОС
-                    </button>
+                    </a>
+                    <!-- <img src="/img/invelope.svg" alt="invelope" class="request__icon">
+                        ВАШ ЗАПРОС -->
+
                 </div>
             </div>
         </div>
