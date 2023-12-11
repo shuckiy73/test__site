@@ -132,7 +132,7 @@ body {
     text-transform: uppercase;
     max-width: 734px;
     margin: 0 auto 15px;
-    color: var(--white-color);
+    color: var(--dark-color);
 }
 
 
@@ -144,7 +144,7 @@ body {
     line-height: 27px;
     text-align: center;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: var(--dark-color);
 }
 
 
